@@ -1,3 +1,6 @@
+
+![image](https://github.com/user-attachments/assets/53863998-bb45-4051-a251-bc77fbfe2ffd)
+
 Use Case Диаграмма
 
 Акторы:
@@ -39,6 +42,3 @@ Use Case Диаграмма
 Мигрант -> Вход/регистрация по электронной почте
 
 Мигрант -> Узнает результат о постановке на учет по месту пребывания
-
-
-![image](https://github.com/user-attachments/assets/53863998-bb45-4051-a251-bc77fbfe2ffd)
