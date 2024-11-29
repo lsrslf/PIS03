@@ -1,5 +1,4 @@
-
-![image](https://github.com/user-attachments/assets/53863998-bb45-4051-a251-bc77fbfe2ffd)
+![image](https://github.com/user-attachments/assets/c1c8e8ca-3133-44f6-8a89-4fec7d25779b)
 
 Use Case Диаграмма
 
