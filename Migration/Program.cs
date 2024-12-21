@@ -36,19 +36,35 @@ namespace MigrationTrackingApp
             {
                 if (currentUser == null)
                 {
-                    Console.Write("Введите Email: ");
-                    string email = Console.ReadLine();
-                    Console.Write("Введите пароль: ");
-                    string password = Console.ReadLine();
+                    Console.WriteLine("1. Войти");
+                    Console.WriteLine("2. Зарегистрироваться");
+                    Console.Write("Выберите действие: ");
+                    string choice = Console.ReadLine();
 
-                    currentUser = userService.Authenticate(email, password);
-                    if (currentUser == null)
+                    if (choice == "1")
                     {
-                        Console.WriteLine("Неверные учетные данные. Попробуйте еще раз.");
+                        Console.Write("Введите Email: ");
+                        string email = Console.ReadLine();
+                        Console.Write("Введите пароль: ");
+                        string password = Console.ReadLine();
+
+                        currentUser = userService.Authenticate(email, password);
+                        if (currentUser == null)
+                        {
+                            Console.WriteLine("Неверные учетные данные. Попробуйте еще раз.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Добро пожаловать, {currentUser.Role}!");
+                        }
+                    }
+                    else if (choice == "2")
+                    {
+                        userService.RegisterUser();
                     }
                     else
                     {
-                        Console.WriteLine($"Добро пожаловать, {currentUser.Role}!");
+                        Console.WriteLine("Неверный выбор. Попробуйте снова.");
                     }
                 }
                 else
@@ -193,6 +209,23 @@ namespace MigrationTrackingApp
         public User Authenticate(string email, string password)
         {
             return users.Find(user => user.Email == email && user.Password == password);
+        }
+
+        public void RegisterUser()
+        {
+            Console.Write("Введите Email для регистрации: ");
+            string email = Console.ReadLine();
+            Console.Write("Введите пароль: ");
+            string password = Console.ReadLine();
+
+            if (users.Exists(user => user.Email == email))
+            {
+                Console.WriteLine("Пользователь с таким Email уже существует.");
+                return;
+            }
+
+            users.Add(new User { Email = email, Password = password, Role = "Landlord" });
+            Console.WriteLine("Регистрация успешно завершена.");
         }
 
         public void AddUser()
@@ -451,7 +484,7 @@ namespace MigrationTrackingApp
                         Console.WriteLine("Введите новый статус (Одобрено/Отклонено/На рассмотрении): ");
                         string newStatus = Console.ReadLine();
                         app.Status = newStatus;
-                        Console.WriteLine($"Статус заявления успешно изменен на {newStatus}.");
+                        Console.WriteLine("Статус успешно обновлен.");
                     }
                     else
                     {
@@ -465,7 +498,7 @@ namespace MigrationTrackingApp
             }
             else
             {
-                Console.WriteLine("Заявлений для изменения статуса не найдено.");
+                Console.WriteLine("Заявлений не найдено.");
             }
         }
     }

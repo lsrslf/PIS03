@@ -15,3 +15,15 @@ E:\projects\C#\Migration\Migration\bin\Debug\DocumentFormat.OpenXml.dll
 E:\projects\C#\Migration\Migration\bin\Debug\DocumentFormat.OpenXml.Framework.dll
 E:\projects\C#\Migration\Migration\bin\Debug\DocumentFormat.OpenXml.xml
 E:\projects\C#\Migration\Migration\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+E:\projects\CSharp\MigrationAPP\Migration\bin\Debug\Migration.exe.config
+E:\projects\CSharp\MigrationAPP\Migration\bin\Debug\Migration.exe
+E:\projects\CSharp\MigrationAPP\Migration\bin\Debug\Migration.pdb
+E:\projects\CSharp\MigrationAPP\Migration\bin\Debug\DocumentFormat.OpenXml.dll
+E:\projects\CSharp\MigrationAPP\Migration\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+E:\projects\CSharp\MigrationAPP\Migration\bin\Debug\DocumentFormat.OpenXml.xml
+E:\projects\CSharp\MigrationAPP\Migration\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+E:\projects\CSharp\MigrationAPP\Migration\obj\Debug\Migration.csproj.AssemblyReference.cache
+E:\projects\CSharp\MigrationAPP\Migration\obj\Debug\Migration.csproj.CoreCompileInputs.cache
+E:\projects\CSharp\MigrationAPP\Migration\obj\Debug\Migration.csproj.Up2Date
+E:\projects\CSharp\MigrationAPP\Migration\obj\Debug\Migration.exe
+E:\projects\CSharp\MigrationAPP\Migration\obj\Debug\Migration.pdb
