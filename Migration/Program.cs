@@ -201,9 +201,9 @@ namespace MigrationTrackingApp
 
         public UserService()
         {
-            users.Add(new User { Email = "admin@example.com", Password = "123", Role = "Admin" });
-            users.Add(new User { Email = "landlord@example.com", Password = "123", Role = "Landlord" });
-            users.Add(new User { Email = "specialist@example.com", Password = "123", Role = "Specialist" });
+            users.Add(new User { Email = "admin@mail.ru", Password = "123", Role = "Admin" });
+            users.Add(new User { Email = "landlord@mail.ru", Password = "123", Role = "Landlord" });
+            users.Add(new User { Email = "specialist@mail.ru", Password = "123", Role = "Specialist" });
         }
 
         public User Authenticate(string email, string password)
